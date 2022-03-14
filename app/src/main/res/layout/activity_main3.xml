@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity3">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/pink1"
+        android:scaleType="centerCrop"
+        ></ImageView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="15dp"
+            >
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:textColor="@color/white"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/raleway_light"
+                android:text="O`z o`lchamingizni kiriting"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_weight="1"
+                    android:background="@drawable/edittxtbackground2"
+                    android:padding="15dp"
+                    android:textStyle="bold"
+                    android:hint="Yelka"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/raleway_light"
+                    android:id="@+id/edittext1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></EditText>
+                <EditText
+                    android:textStyle="bold"
+
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittxtbackground2"
+                    android:padding="15dp"
+                    android:hint="Bo`yi"
+                    android:fontFamily="@font/raleway_light"
+                    android:id="@+id/edittext2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></EditText>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittxtbackground2"
+                android:padding="15dp"
+                android:layout_marginRight="5dp"
+                android:hint="Yengi"
+                android:fontFamily="@font/raleway_light"
+                android:id="@+id/edittext3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
+            <EditText
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittxtbackground2"
+                android:padding="15dp"
+                android:hint="Yoqa"
+                android:fontFamily="@font/raleway_light"
+                android:id="@+id/edittext4"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittxtbackground2"
+                android:padding="15dp"
+                android:hint="Ko`krak aylanasi"
+                android:fontFamily="@font/raleway_light"
+                android:id="@+id/edittext5"
+                android:textStyle="bold"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
+            <EditText
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittxtbackground2"
+                android:padding="15dp"
+                android:hint="Orqa qismi"
+                android:fontFamily="@font/raleway_light"
+                android:id="@+id/edittext6"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
+        </LinearLayout>
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittxtbackground2"
+                android:padding="15dp"
+                android:hint="Ism Familya"
+                android:fontFamily="@font/raleway_light"
+                android:id="@+id/edittext7"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
+            <EditText
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittxtbackground2"
+                android:padding="15dp"
+                android:hint="Telefon"
+                android:textStyle="bold"
+                android:fontFamily="@font/raleway_light"
+                android:id="@+id/edittext8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonorder2"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Buyurtma berish"
+                android:textAllCaps="false"
+                android:fontFamily="@font/raleway_light"
+                android:background="@drawable/buttonbackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></androidx.appcompat.widget.AppCompatButton>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

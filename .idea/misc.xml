@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android Projects/Mursal/app/src/main/res/drawable/addbutton.xml" value="0.3651041666666667" />
+        <entry key="..\:/Android Projects/Mursal/app/src/main/res/drawable/buttonbackground.xml" value="0.3651041666666667" />
+        <entry key="..\:/Android Projects/Mursal/app/src/main/res/drawable/buttonripple.xml" value="0.3594871794871795" />
+        <entry key="..\:/Android Projects/Mursal/app/src/main/res/drawable/edittxtbackground.xml" value="0.3651041666666667" />
+        <entry key="..\:/Android Projects/Mursal/app/src/main/res/drawable/edittxtbackground2.xml" value="0.3594871794871795" />
+        <entry key="..\:/Android Projects/Mursal/app/src/main/res/drawable/forbottomsheet.xml" value="0.3594871794871795" />
+        <entry key="..\:/Android Projects/Mursal/app/src/main/res/drawable/layoutbackground.xml" value="0.3651041666666667" />
+        <entry key="..\:/Android Projects/Mursal/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Android Projects/Mursal/app/src/main/res/layout/activity_main2.xml" value="0.3489583333333333" />
+        <entry key="..\:/Android Projects/Mursal/app/src/main/res/layout/activity_main3.xml" value="0.3489583333333333" />
+        <entry key="..\:/Android Projects/Mursal/app/src/main/res/layout/activity_main4.xml" value="0.3489583333333333" />
+        <entry key="..\:/Android Projects/Mursal/app/src/main/res/layout/activity_main5.xml" value="0.3489583333333333" />
+        <entry key="..\:/Android Projects/Mursal/app/src/main/res/layout/bottomsheet_dialog.xml" value="0.3489583333333333" />
+        <entry key="..\:/Android Projects/Mursal/app/src/main/res/layout/recyclerview_item1.xml" value="0.3489583333333333" />
+        <entry key="..\:/Android Projects/Mursal/app/src/main/res/layout/recyclerview_item2.xml" value="0.3489583333333333" />
+        <entry key="..\:/Android Projects/Mursal/app/src/main/res/layout/recyclerview_item3.xml" value="0.3489583333333333" />
+        <entry key="..\:/Android Projects/Mursal/app/src/main/res/layout/recyclerview_item4.xml" value="0.3489583333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

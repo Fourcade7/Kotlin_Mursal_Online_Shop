@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/pink1"
+            android:scaleType="centerCrop"
+            ></ImageView>
+       <LinearLayout
+           android:gravity="center"
+           android:padding="10dp"
+           android:layout_marginTop="15dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           >
+           <RelativeLayout
+               android:id="@+id/relativlay1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               >
+
+               <TextView
+                   android:id="@+id/mursall"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerVertical="true"
+                   android:fontFamily="@font/raleway_light"
+                   android:text="Mursal"
+                   android:textSize="35dp"
+                   android:textColor="@color/white"
+                   android:textStyle="bold" />
+
+               <TextView
+                   android:textColor="@color/white"
+                   android:id="@+id/mursall2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerVertical="true"
+                   android:layout_marginLeft="15dp"
+                   android:layout_toRightOf="@id/mursall"
+                   android:fontFamily="@font/raleway_light"
+                   android:text="your choice"
+                   android:textSize="15dp"
+                   android:textStyle="bold" />
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentEnd="true"
+                   app:cardCornerRadius="8dp"
+                   app:cardElevation="5dp"
+                   app:cardUseCompatPadding="true">
+
+                   <ImageView
+                       android:id="@+id/imageview13"
+                       android:clickable="true"
+                       android:background="?attr/selectableItemBackground"
+                       android:layout_width="45dp"
+                       android:layout_height="45dp"
+                       android:padding="10dp"
+                       android:src="@drawable/muralll"></ImageView>
+
+               </androidx.cardview.widget.CardView>
+
+           </RelativeLayout>
+
+           <androidx.cardview.widget.CardView
+               android:id="@+id/cardView"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_alignParentEnd="true"
+               app:cardCornerRadius="8dp"
+               app:cardElevation="5dp"
+               app:cardUseCompatPadding="true"
+               >
+
+               <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/edittxtbackground"
+                   android:drawableRight="@drawable/ic_round_search_24"
+                   android:fontFamily="@font/raleway_light"
+                   android:hint="Qidiruv"
+                   android:padding="10dp"></EditText>
+           </androidx.cardview.widget.CardView>
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/recyclerview1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               ></androidx.recyclerview.widget.RecyclerView>
+       </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:layout_marginTop="-35dp"
+        android:background="@drawable/layoutbackground"
+        android:padding="10dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/textviewmahsulot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/raleway_light"
+            android:text="Bizning mahsulotlar"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ></androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+
+</LinearLayout>
