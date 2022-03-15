@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.WindowManager
+import com.bumptech.glide.Glide
 import com.fourcade7.mursal.databinding.ActivityMain2Binding
 import com.fourcade7.mursal.databinding.ActivityMainBinding
 import com.fourcade7.mursal.databinding.BottomsheetDialogBinding
@@ -26,7 +27,7 @@ class MainActivity2 : AppCompatActivity() {
         val price=intent.getStringExtra("price")
 
 
-        Picasso.get().load(img).fit().centerCrop().placeholder(R.drawable.img).into(binding.imageview4)
+        Glide.with(this@MainActivity2).load(img).fitCenter().centerCrop().placeholder(R.drawable.img).into(binding.imageview4)
         binding.textviewordername1.text=name
         binding.textvieworderdescription1.text="$description\n$price"
 

@@ -6,6 +6,7 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.fourcade7.mursal.MainActivity5
 import com.fourcade7.mursal.Models.Category
 import com.fourcade7.mursal.R
@@ -33,7 +34,7 @@ class CategoryAdapterAdmin(
 
     override fun onBindViewHolder(holder: CategoryAdminViewholder, position: Int) {
         holder.binding.textview12.setText(arraylistcateoryadmin.get(position).name)
-        Picasso.get().load(arraylistcateoryadmin.get(position).imageurl).fit().placeholder(com.fourcade7.mursal.R.drawable.img).centerCrop().into(holder.binding.imageview12)
+        Glide.with(context).load(arraylistcateoryadmin.get(position).imageurl).fitCenter().placeholder(com.fourcade7.mursal.R.drawable.img).centerCrop().into(holder.binding.imageview12)
         holder.binding.linearlay2.setOnLongClickListener {
 
             val alertdialog=AlertDialog.Builder(context)

@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.fourcade7.mursal.MainActivity2
 import com.fourcade7.mursal.MainActivity5
 import com.fourcade7.mursal.Models.Product
@@ -36,7 +37,7 @@ class ProductAdapterAdmin(
     }
 
     override fun onBindViewHolder(holder: ProductViewholder, position: Int) {
-        Picasso.get().load(arraylistproducts.get(position).imageurl).fit().placeholder(com.fourcade7.mursal.R.drawable.img).centerCrop().into(holder.binding.imageview22)
+        Glide.with(context).load(arraylistproducts.get(position).imageurl).fitCenter().placeholder(com.fourcade7.mursal.R.drawable.img).centerCrop().into(holder.binding.imageview22)
         holder.binding.textview22.setText(arraylistproducts.get(position).name)
         holder.binding.textview33.setText(arraylistproducts.get(position).description)
         holder.binding.textview44.setText(arraylistproducts.get(position).price)

@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.appcompat.view.menu.MenuView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.fourcade7.mursal.Models.Order
 import com.fourcade7.mursal.R
 import com.fourcade7.mursal.databinding.RecyclerviewItem5Binding
@@ -28,7 +29,7 @@ class OrderAdapter(
     }
 
     override fun onBindViewHolder(holder: OrderViewholder, position: Int) {
-        Picasso.get().load(arrayListorder.get(position).imageurl).fit().centerCrop().into(holder.binding.imageview223)
+        Glide.with(context).load(arrayListorder.get(position).imageurl).fitCenter().centerCrop().into(holder.binding.imageview223)
        holder.binding.textview22.setText(arrayListorder.get(position).ism_familya)
         holder.binding.textview33.setText(arrayListorder.get(position).ordername+" , bo`yi: "+arrayListorder.get(position).boyi+" yelka: "+arrayListorder.get(position).yelka+" yengi: "+arrayListorder.get(position).yengi+" yoqa: "+arrayListorder.get(position).yoqa+" ko`krak aylanasi: "+arrayListorder.get(position).kokrak_aylanasi+" orqa qismi: "+arrayListorder.get(position).orqa_qismi+" bel qismi "+arrayListorder.get(position).bel_qismi)
         holder.binding.textview44.setText(arrayListorder.get(position).price+" , "+arrayListorder.get(position).telefon)

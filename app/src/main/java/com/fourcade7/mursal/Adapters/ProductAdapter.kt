@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.fourcade7.mursal.MainActivity2
 import com.fourcade7.mursal.Models.Category
 import com.fourcade7.mursal.Models.Product
@@ -27,7 +28,7 @@ class ProductAdapter(
 
     override fun onBindViewHolder(holder: ProductViewholder, position: Int) {
 
-        Picasso.get().load(arraylistallproducts.get(position).imageurl).fit().placeholder(com.fourcade7.mursal.R.drawable.img).centerCrop().into(holder.binding.imageview2)
+        Glide.with(context).load(arraylistallproducts.get(position).imageurl).fitCenter().placeholder(com.fourcade7.mursal.R.drawable.img).centerCrop().into(holder.binding.imageview2)
 
 
         holder.binding.textview2.setText(arraylistallproducts.get(position).name)

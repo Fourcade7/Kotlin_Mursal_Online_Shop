@@ -29,8 +29,8 @@ class CategoryAdapter(
     }
 
     override fun onBindViewHolder(holder: CategoryViewholder, position: Int) {
-       Picasso.get().load(arrayListCategorys.get(position).imageurl).fit().placeholder(com.fourcade7.mursal.R.drawable.img).centerCrop().networkPolicy(NetworkPolicy.OFFLINE).into(holder.binding.imageview1)
-       //Glide.with(context).load(arrayListCategorys.get(position).imageurl).placeholder(com.fourcade7.mursal.R.drawable.loading).into(holder.binding.imageview1)
+       //Picasso.get().load(arrayListCategorys.get(position).imageurl).fit().placeholder(com.fourcade7.mursal.R.drawable.img).centerCrop().networkPolicy(NetworkPolicy.OFFLINE).into(holder.binding.imageview1)
+       Glide.with(context).load(arrayListCategorys.get(position).imageurl).fitCenter().centerCrop().placeholder(com.fourcade7.mursal.R.drawable.loading).into(holder.binding.imageview1)
 
         holder.binding.textview1.setText(arrayListCategorys.get(position).name)
         holder.binding.linearlay.setOnClickListener {
