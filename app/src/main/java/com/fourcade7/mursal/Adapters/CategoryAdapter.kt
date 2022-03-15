@@ -16,7 +16,7 @@ import com.squareup.picasso.Picasso
 
 class CategoryAdapter(
     val context:Context,
-    val arrayListCategorys:ArrayList<Category>
+    var arrayListCategorys:ArrayList<Category>
 
 
 ): RecyclerView.Adapter<CategoryAdapter.CategoryViewholder>() {
@@ -43,6 +43,12 @@ class CategoryAdapter(
     override fun getItemCount(): Int {
         return arrayListCategorys.size
     }
+
+    fun filterList(filteredList: ArrayList<Category>) {
+        arrayListCategorys = filteredList
+        notifyDataSetChanged()
+    }
+
     class CategoryViewholder(val binding: RecyclerviewItem1Binding): RecyclerView.ViewHolder(binding.root)
 
 

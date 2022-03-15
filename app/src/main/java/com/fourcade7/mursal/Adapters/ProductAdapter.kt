@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.fourcade7.mursal.MainActivity2
+import com.fourcade7.mursal.Models.Category
 import com.fourcade7.mursal.Models.Product
 import com.fourcade7.mursal.databinding.RecyclerviewItem1Binding
 import com.fourcade7.mursal.databinding.RecyclerviewItem2Binding
@@ -14,10 +15,10 @@ import com.squareup.picasso.Picasso
 
 class ProductAdapter(
     val context:Context,
-    val arraylistallproducts: ArrayList<Product>,
+    var arraylistallproducts: ArrayList<Product>,
 
 
-): RecyclerView.Adapter<ProductAdapter.ProductViewholder>() {
+    ): RecyclerView.Adapter<ProductAdapter.ProductViewholder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductViewholder {
 
@@ -46,6 +47,11 @@ class ProductAdapter(
 
     override fun getItemCount(): Int {
         return arraylistallproducts.size
+    }
+
+    fun filterList(filteredList: ArrayList<Product>) {
+        arraylistallproducts = filteredList
+        notifyDataSetChanged()
     }
     class ProductViewholder(val binding: RecyclerviewItem2Binding): RecyclerView.ViewHolder(binding.root)
 

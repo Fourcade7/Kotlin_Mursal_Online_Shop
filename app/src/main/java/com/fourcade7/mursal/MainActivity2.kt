@@ -26,7 +26,7 @@ class MainActivity2 : AppCompatActivity() {
         val price=intent.getStringExtra("price")
 
 
-        Picasso.get().load(img).fit().centerCrop().into(binding.imageview4)
+        Picasso.get().load(img).fit().centerCrop().placeholder(R.drawable.img).into(binding.imageview4)
         binding.textviewordername1.text=name
         binding.textvieworderdescription1.text="$description\n$price"
 

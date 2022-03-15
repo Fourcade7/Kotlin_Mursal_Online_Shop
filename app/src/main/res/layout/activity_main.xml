@@ -41,8 +41,8 @@
                    android:layout_centerVertical="true"
                    android:fontFamily="@font/raleway_light"
                    android:text="Mursal"
-                   android:textSize="35dp"
                    android:textColor="@color/white"
+                   android:textSize="35dp"
                    android:textStyle="bold" />
 
                <TextView
@@ -90,6 +90,7 @@
                >
 
                <EditText
+                   android:id="@+id/edittextseatch"
                    android:layout_width="match_parent"
                    android:layout_height="wrap_content"
                    android:background="@drawable/edittxtbackground"

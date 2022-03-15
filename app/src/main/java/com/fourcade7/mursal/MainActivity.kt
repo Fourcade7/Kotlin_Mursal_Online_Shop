@@ -1,11 +1,16 @@
 package com.fourcade7.mursal
 
+import android.app.AlertDialog
 import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
+import android.view.LayoutInflater
 import android.view.View
 import android.view.WindowManager
+import android.widget.Toast
 import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -16,6 +21,8 @@ import com.fourcade7.mursal.Adapters.ProductAdapter
 import com.fourcade7.mursal.Models.Category
 import com.fourcade7.mursal.Models.Product
 import com.fourcade7.mursal.databinding.ActivityMainBinding
+import com.fourcade7.mursal.databinding.BottomsheetDialogBinding
+import com.google.android.gms.common.util.ArrayUtils.contains
 import com.google.firebase.database.*
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
@@ -88,19 +95,74 @@ class MainActivity : AppCompatActivity() {
             }
         })
 
+        binding.imageview13.setOnLongClickListener() {
+
+            val bottomsheetDialogBinding=BottomsheetDialogBinding.inflate(LayoutInflater.from(this@MainActivity))
+
+            val alertdialog= AlertDialog.Builder(this@MainActivity)
+            alertdialog.setTitle("Admin")
+            alertdialog.setView(bottomsheetDialogBinding.root)
+            alertdialog.setIcon(R.drawable.ic_baseline_security_24)
+
+            alertdialog.setPositiveButton("ok"){_,_->
+
+
+                if (bottomsheetDialogBinding.edittextpassword.text.toString().equals("")){
+                    startActivity(Intent(this@MainActivity,MainActivity7::class.java))
+                }else{
+                    Toast.makeText(this@MainActivity,"Xato", Toast.LENGTH_SHORT).show()
+                }
 
 
 
 
 
+            }
+
+            alertdialog.create()
+            alertdialog.show()
+            return@setOnLongClickListener true
+        }
+
+
+        binding.edittextseatch.addTextChangedListener(object :TextWatcher{
+            override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+
+            }
+
+            override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+
+            }
+
+
+            override fun afterTextChanged(s: Editable?) {
+                filter(s.toString())
+            }
+        })
 
 
 
+    }
+    fun filter(text:String){
+        val searcharraylist=ArrayList<Category>()
 
+            for (item:Category in arrayListCategorys){
+                if (item.name.toLowerCase().contains(text.toLowerCase())){
+                    searcharraylist.add(item)
+                }
+            }
+            categoryAdapter?.let {
+                it.filterList(searcharraylist)
+            }
 
-
-        binding.imageview13.setOnClickListener {
-            startActivity(Intent(this@MainActivity,MainActivity4::class.java))
+        val searcharraylist2=ArrayList<Product>()
+        for (item:Product in arraylistallproducts){
+            if (item.name.toLowerCase().contains(text.toLowerCase()) || item.description.toLowerCase().contains(text.toLowerCase()) || item.price.toLowerCase().contains(text.toLowerCase())){
+                searcharraylist2.add(item)
+            }
+        }
+        productAdapter?.let {
+            it.filterList(searcharraylist2)
         }
 
 

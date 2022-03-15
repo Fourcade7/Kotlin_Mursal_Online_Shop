@@ -14,7 +14,7 @@
         android:layout_alignParentEnd="true"
         >
         <RelativeLayout
-            android:id="@+id/relativelay2"
+            android:id="@+id/relativelay23"
             android:clickable="true"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:layout_width="match_parent"
@@ -22,7 +22,8 @@
             android:orientation="vertical"
             >
             <androidx.cardview.widget.CardView
-                android:id="@+id/cardview1"
+                android:layout_centerVertical="true"
+                android:id="@+id/cardview13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="8dp"
@@ -31,7 +32,7 @@
                 >
 
                 <ImageView
-                    android:id="@+id/imageview22"
+                    android:id="@+id/imageview223"
                     android:src="@drawable/hijab2"
                     android:scaleType="centerCrop"
                     android:layout_width="70dp"
@@ -40,9 +41,9 @@
 
             </androidx.cardview.widget.CardView>
             <LinearLayout
-                android:layout_toRightOf="@id/cardview1"
+                android:layout_toRightOf="@id/cardview13"
                 android:layout_width="wrap_content"
-                android:layout_toLeftOf="@id/cardview2"
+                android:layout_toLeftOf="@id/cardview23"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:gravity="center_vertical"
@@ -53,7 +54,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Hijab"
-                    android:layout_marginBottom="6dp"
+
                     android:layout_centerVertical="true"
                     android:textSize="15dp"
                     android:textStyle="bold"
@@ -63,8 +64,7 @@
                     android:id="@+id/textview33"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Hijab clothes"
-                    android:layout_marginBottom="6dp"
+                    android:text="boyi 25.3, yelka 37, kk aylanasi 25, yoqasi45,sdffdffdfdfdfddfdf"
                     android:layout_centerVertical="true"
                     android:textSize="12dp"
                     android:textStyle="bold"
@@ -75,7 +75,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="20 $"
-                    android:layout_marginBottom="6dp"
                     android:layout_centerVertical="true"
                     android:textSize="15dp"
                     android:textStyle="bold"
@@ -86,7 +85,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_margin="10dp"
                 android:layout_alignParentEnd="true"
-                android:id="@+id/cardview2"
+                android:id="@+id/cardview23"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="8dp"
@@ -95,9 +94,11 @@
                 >
 
                 <ImageView
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
                     android:padding="4dp"
-                    android:id="@+id/imageview3"
-                    android:src="@drawable/ic_round_favorite_border_24"
+                    android:id="@+id/imageview33"
+                    android:src="@drawable/ic_baseline_call_24"
                     android:scaleType="centerCrop"
                     android:layout_width="25dp"
                     android:layout_height="25dp"></ImageView>

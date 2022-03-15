@@ -4,8 +4,20 @@
     android:layout_width="match_parent"
     android:id="@+id/linearlay1"
     android:padding="15dp"
-    android:background="@drawable/forbottomsheet"
     android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/edittextpassword"
+        android:inputType="textPassword"
+        android:background="@drawable/edittxtbackground2"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+
+        android:paddingBottom="10dp"
+        android:hint="Parolni kiriting"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
 
 
 

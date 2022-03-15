@@ -47,7 +47,7 @@
                     android:background="@drawable/edittxtbackground2"
                     android:padding="15dp"
                     android:textStyle="bold"
-                    android:hint="Yelka"
+                    android:hint="Bo`yi"
                     android:layout_marginRight="5dp"
                     android:fontFamily="@font/raleway_light"
                     android:id="@+id/edittext1"
@@ -60,7 +60,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/edittxtbackground2"
                     android:padding="15dp"
-                    android:hint="Bo`yi"
+                    android:hint="Yelka"
                     android:fontFamily="@font/raleway_light"
                     android:id="@+id/edittext2"
                     android:layout_width="match_parent"
@@ -126,6 +126,16 @@
                 android:layout_height="wrap_content"></EditText>
         </LinearLayout>
 
+            <EditText
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittxtbackground2"
+                android:padding="15dp"
+                android:hint="Bel qismi"
+                android:fontFamily="@font/raleway_light"
+                android:id="@+id/edittext77"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
             <EditText
                 android:layout_marginTop="10dp"
                 android:background="@drawable/edittxtbackground2"
